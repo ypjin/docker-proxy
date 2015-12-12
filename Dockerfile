@@ -1,5 +1,5 @@
 #These instructions serve the purpose to provide a caching http proxy with anonymization and advertisment blocking features.
-FROM debian:jessie
+FROM ubuntu:wily
 MAINTAINER Tobias Suckow <tobias@suckow.biz>
 
 # get up to date to apply fixes and version updates
