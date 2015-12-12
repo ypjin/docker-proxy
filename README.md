@@ -4,7 +4,7 @@
 A [Dockerfile](http://docs.docker.com/engine/reference/builder/) to serve a caching ([Squid](http://www.squid-cache.org/)), spam blocking ([Privoxy](http://www.privoxy.org/)) and anonymizing ([Tor](https://www.torproject.org/)) HTTP proxy.
 
 # How do I run it?
- 1. Pull suckowbiz/proxy  
+ 1. Pull suckowbiz/proxy to make it available  
     `docker pull suckowbiz/proxy`
  2. Run a container that bind to [default route](https://en.wikipedia.org/wiki/Default_gateway) on port `3128` by executing:  
     `docker run -d -p 0.0.0.0:3128:3128 suckowbiz/proxy`  
