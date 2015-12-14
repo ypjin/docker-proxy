@@ -1,7 +1,7 @@
 ![image](https://img.shields.io/imagelayers/layers/suckowbiz/proxy/latest.svg) ![image](https://img.shields.io/imagelayers/image-size/suckowbiz/proxy/latest.svg)  ![image](https://img.shields.io/docker/pulls/suckowbiz/proxy.svg) ![image](https://img.shields.io/github/license/suckowbiz/docker-proxy.svg)
 
 # What is it?
-A [Dockerfile](http://docs.docker.com/engine/reference/builder/) to serve a caching ([Squid](http://www.squid-cache.org/)), spam blocking ([Privoxy](http://www.privoxy.org/)) and anonymizing ([Tor](https://www.torproject.org/)) HTTP proxy.
+A [Dockerfile](http://docs.docker.com/engine/reference/builder/) to serve a caching ([Squid](http://www.squid-cache.org/)), spam blocking ([Privoxy](http://www.privoxy.org/)) and anonymous ([Tor](https://www.torproject.org/)) HTTP proxy.
 
 # How do I run it?
  1. Pull suckowbiz/proxy to make it available  
