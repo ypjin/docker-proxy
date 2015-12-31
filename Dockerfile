@@ -6,16 +6,8 @@ MAINTAINER Tobias Suckow <tobias@suckow.biz>
 RUN apt-get update --quiet && apt-get install --quiet --yes --no-install-recommends \
     privoxy \
     squid \
-    tor
+    tor \
+    tor-geoipdb
 
-# copy configuration files to apply custom changes 
-WORKDIR /etc
-RUN mkdir -p tor squid3 privoxy
-COPY tor.conf tor/torrc
-COPY squid.conf squid3/
-COPY privoxy.conf privoxy/config
-
-# copy entrypoint script to execute multiple services
-WORKDIR /
-COPY entrypoint.sh .
+COPY context .
 ENTRYPOINT ["/entrypoint.sh"]
