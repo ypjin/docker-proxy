@@ -11,4 +11,8 @@ A [Dockerfile](http://docs.docker.com/engine/reference/builder/) to serve a cach
  3. Configure your browser to use a `HTTP proxy` from `localhost` at port `3128` for `all protocols`
  4. Visit a page that displays your IP to make sure the proxy is set up properly. See [Google Search](https://www.google.de/#newwindow=1&q=my+wan+ip).
 
+# Options
+You might want to skip countries as being involved for proxying to circumnavigate censorships of any kind. To do so you might want to provide environment variable ***TOR_EXCLUDE_EXIT_NODES*** which follows the restrictions of TOR parameter *ExcludeExitNodes* (see [TOR manual](https://www.torproject.org/docs/tor-manual.html.en)). E.g. to skip GERMANY as an exit node start the proxy like: 
+`docker run -d -p 0.0.0.0:3128:3128 -e TOR_EXCLUDE_EXIT_NODES="{de}" suckowbiz/proxy`
+
 Note: This stuff is licensed under MIT to allow doing anything with proper attribution and without warranty.
