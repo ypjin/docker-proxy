@@ -13,6 +13,6 @@ RUN apt-get update --quiet && apt-get install --quiet --yes --no-install-recomme
 COPY context/entrypoint.sh /entrypoint.sh
 COPY context/etc/privoxy/config /etc/privoxy/config
 COPY context/etc/privoxy/match-all.action /etc/privoxy/match-all.action
-COPY context/etc/squid3/squid.conf /etc/squid3/squid.conf
+COPY context/etc/squid/squid.conf /etc/squid/squid.conf
 
 ENTRYPOINT ["/entrypoint.sh"]
